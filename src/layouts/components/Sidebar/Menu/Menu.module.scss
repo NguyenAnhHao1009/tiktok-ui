@@ -1,0 +1,41 @@
+.menu-item {
+    display: flex;
+    font-size: 2.1rem;
+    align-items: center;
+    padding: 9px;
+    font-family: 'Tiktok Font Bold';
+    border-radius: 5px;
+    transition: all 0.6s;
+    color: var(--black);
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+    .active-icon {
+        padding: 0px;
+        display: none;
+        align-items: center;
+    }
+
+    &.active {
+        color: var(--primary);
+        .icon {
+            display: none;
+        }
+        .active-icon {
+            display: flex;
+        }
+    }
+
+    svg {
+        font-size: 10rem;
+    }
+
+    &:hover {
+        background-color: rgb(239, 239, 239);
+    }
+}
+
+.title {
+    margin-left: 5px;
+}

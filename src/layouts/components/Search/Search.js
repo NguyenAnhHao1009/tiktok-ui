@@ -9,7 +9,7 @@ import styles from './Search.module.scss';
 import { useEffect, useRef, useState } from 'react';
 import { SearchIcon } from '~/components/Icons';
 import { useDebounce } from '~/hooks';
-import * as searchServices from '~/apiServices/searchService';
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 
@@ -64,7 +64,6 @@ function Search() {
     };
 
     return (
-
         // Using a wrapper <div></div> tag around the reference element solves
         // this by  creating a new parentNode context
 
